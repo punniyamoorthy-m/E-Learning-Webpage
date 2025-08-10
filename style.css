@@ -447,6 +447,28 @@ form input {
     cursor: pointer;
 }
 
+
+/* ---------------------scroll animate------------------- */
+
+div{
+    animation: scroll 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
+@keyframes scroll {
+            from{
+                opacity: 0;
+                scale: 0.5;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+            
+}
+
+/* ---------------------media query------------------- */
 @media only screen and (max-width:770px) {
     #header {
         background-image: none;
